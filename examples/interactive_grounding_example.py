@@ -41,8 +41,8 @@ def pub_image():
 
     incorrect_idxs = []
     
-    cv2.namedWindow('result', cv2.WINDOW_NORMAL)
-    cv2.resizeWindow('result', img.shape[1], img.shape[0])
+    # cv2.namedWindow('result', cv2.WINDOW_NORMAL)
+    # cv2.resizeWindow('result', img.shape[1], img.shape[0])
 
     while True:
         query = raw_input('Search Query: ').lower()
@@ -69,8 +69,9 @@ def pub_image():
             else:
                 cv2.rectangle(draw_img, (x1, y1), (x2, y2), (0,255,0), 2)
 
-        cv2.imshow('result', draw_img)
-        k = cv2.waitKey(0)
+        # cv2.imshow('result', draw_img)
+        # k = cv2.waitKey(0)
+        cv2.imwrite('./grounding_result.png', draw_img)
 
     return True
 
