@@ -80,13 +80,22 @@ Run the script. The first time you run this command, Docker downloads an 8.99GB 
 $ sh start_ingress.sh
 ```
 
-Start the INGRESS server inside the container by running the `ingress` command:
+Start the INGRESS server by running the `ingress` command:
 ```bash
 root@pc:/# ingress
 ```
 
 
 ## Example
+
+Try out the example:
+
+```bash
+cd <ros_workspace>/examples
+python interactive_grounding_example.py
+```
+
+Type "the red cup in the middle" into the query. This outputs `grounding_result.png` and prints out self-referrential and relational captions.
 
 
 ## Development
