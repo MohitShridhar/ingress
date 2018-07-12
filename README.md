@@ -4,6 +4,8 @@
 Mohit Shridhar, David Hsu  
 RSS 2018
 
+![](data/main_fig_paper.jpg)
+
 Since my code is an **abomination**, I created a docker image (~8.99GB) of my setup. You can treat this is as a black box; input: image & expression, output: bounding boxes and question captions
 
 ## Requirements
