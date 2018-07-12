@@ -59,7 +59,7 @@ Start roscore:
 $ roscore
 ```
 
-#### Network Setup (optional)
+#### Network Setup (Optional)
 
 For a server-client setup, edit the `start_ingress.sh` script with your network settings:
 ```bash
