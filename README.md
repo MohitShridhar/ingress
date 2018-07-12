@@ -29,6 +29,26 @@ If you find the code useful, please cite:
 
 ## Installation
 
+#### Docker
+
+Follow the instructions to install NVIDIA docker. You should be able to run this, if everything is installed properly:
+```bash
+docker run --runtime=nvidia --rm nvidia/cuda nvidia-smi
+```
+
+#### Interface
+
+Clone the repo:
+```bash
+cd <ros_workspace>/src
+git clone --recursive https://github.com/AdaCompNUS/ingress.git
+```
+
+Install actionlib messages:
+```bash
+cd <ros_workspace>
+catkin_make --pkg action_controller
+```
 
 ## Usage
 
