@@ -32,6 +32,7 @@ def pub_image():
     load_result = client.get_result()
 
     boxes = np.reshape(load_result.boxes, (-1, 4))      
+    captions = np.array(load_result.captions)
 
     # Query test
     print "Waiting for server..."
@@ -72,6 +73,23 @@ def pub_image():
         # cv2.imshow('result', draw_img)
         # k = cv2.waitKey(0)
         cv2.imwrite('./grounding_result.png', draw_img)
+
+        self_captions = [captions[idx] for idx in context_boxes_idxs]
+        rel_captions = query_result.predicted_captions
+        
+        is_rel_ambiguous = query_result.is_ambiguous
+
+        print "Self Referential Captions: "
+        print self_captions
+        
+        if len(rel_captions) > 0:
+            print "Relational Captions: "
+            print rel_captions
+        else:
+            print "lib/comprehension_test.py was started without Disamb mode!"
+
+        print "Is the expression relationally ambiguous? " + str(is_rel_ambiguous)
+
 
     return True
 
