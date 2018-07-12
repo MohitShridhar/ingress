@@ -103,12 +103,15 @@ def ground():
 
         # ------------------------------------------------
         # print captions 
+        print ""
         rospy.loginfo("Self Referential Captions: ")
         print self_captions
+        print ""
         
         if len(rel_captions) > 0:
             rospy.loginfo("Relational Captions: ")
             print rel_captions
+            print ""
         else:
             rospy.logwarn("lib/comprehension_test.py was started without --disambiguate mode!")
 
