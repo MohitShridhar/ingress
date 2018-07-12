@@ -27,6 +27,10 @@ If you find the code useful, please cite:
 - [ROS Indigo](http://wiki.ros.org/indigo/Installation/Ubuntu)
 - [OpenCV 2](https://docs.opencv.org/3.4.1/d2/de6/tutorial_py_setup_in_ubuntu.html) (Optional)
 
+## Hardware
+
+- Tested on NVIDIA GTX 1080 (needs about 2.5 GB RAM)
+	
 ## Installation
 
 #### Docker
@@ -71,11 +75,10 @@ IP=<system_ip_addr>
 
 #### Launch
 
-Run the script: 
+Run the script. The first time you run this command, Docker downloads an 8.99GB image (could take a while!)  
 ```bash
 $ sh start_ingress.sh
 ```
-The first time you run this command, Docker downloads an 8.99GB image (could take a while!)  
 
 Start the INGRESS server inside the container by running the `ingress` command:
 ```bash
