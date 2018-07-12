@@ -6,7 +6,18 @@ RSS 2018
 
 ![](data/main_fig_paper.jpg)
 
-Since my code is an **abomination**, I created a docker image (~8.99GB) of my setup. You can treat this is as a black box; input: image & expression, output: bounding boxes and question captions
+Since my code is an **abomination**, I created a docker image (~8.99GB) of my setup. You can treat this is as a black box; input: image & expression, output: bounding boxes and question captions  
+
+If you find code useful, please cite:
+
+```
+@inproceedings{Shridhar-RSS-18, 
+    author    = {Mohit Shridhar AND David Hsu}, 
+    title     = {Interactive Visual Grounding of Referring Expressions for Human-Robot Interaction}, 
+    booktitle = {Proceedings of Robotics: Science and Systems}, 
+    year      = {2018}
+} 
+```
 
 ## Requirements
 
