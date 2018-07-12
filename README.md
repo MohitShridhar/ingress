@@ -91,8 +91,8 @@ root@pc:/# ingress
 Try out the example:
 
 ```bash
-cd <ros_workspace>/examples
-python interactive_grounding_example.py
+$ cd <ros_workspace>/examples
+$ python interactive_grounding_example.py
 ```
 
 Type "the red cup in the middle" into the query. This outputs `grounding_result.png` and prints out self-referrential and relational captions.
