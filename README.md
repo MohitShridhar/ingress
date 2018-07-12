@@ -61,11 +61,11 @@ $ roscore
 
 #### Network Setup (optional)
 
-For using server-client setup, edit the `start_ingress.sh` script with your server network settings:
+For a server-client setup, edit the `start_ingress.sh` script with your network settings:
 ```bash
 ...
 MASTER_URI=http://<roscore_ip_addr>:11311
-IP=<server_ip_addr>
+IP=<system_ip_addr>
 ...
 ```
 
