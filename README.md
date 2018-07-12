@@ -40,17 +40,44 @@ docker run --runtime=nvidia --rm nvidia/cuda nvidia-smi
 
 Clone the repo:
 ```bash
-cd <ros_workspace>/src
-git clone --recursive https://github.com/AdaCompNUS/ingress.git
+$ cd <ros_workspace>/src
+$ git clone --recursive https://github.com/AdaCompNUS/ingress.git
 ```
 
 Install actionlib messages:
 ```bash
-cd <ros_workspace>
-catkin_make --pkg action_controller
+$ cd <ros_workspace>
+$ catkin_make --pkg action_controller
 ```
 
 ## Usage
+
+#### ROS Setup
+
+Start roscore on your **client** side:
+```bash
+$ roscore
+```
+
+Edit the `start_ingress.sh` script with your server network settings:
+```bash
+...
+# Setup ROS
+MASTER_URI=http://<roscore_ip_addr>:11311
+IP=<server_ip_addr>
+...
+```
+If you are using a single PC, you can use use the default `localhost` setup.  
+
+Run the script on the **server** side:
+```bash
+$ sh start_ingress.sh
+```
+
+Start INGRESS server by running the `ingress` command:
+```bash
+root@pc:/# ingress
+```
 
 
 ## Example
