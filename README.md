@@ -21,11 +21,11 @@ If you find the code useful, please cite:
 
 ## Requirements
 
-- Ubuntu 14.04
-- Docker 18.03.1+
-- NVIDIA Docker
-- ROS Indigo
-- OpenCV 2 (Optional)
+- [Ubuntu 14.04](http://releases.ubuntu.com/14.04/)
+- [Docker 18.03.1+](https://docs.docker.com/install/linux/docker-ce/ubuntu/#install-docker-ce)
+- [NVIDIA Docker](https://github.com/nvidia/nvidia-docker/wiki/Installation-(version-2.0))
+- [ROS Indigo](http://wiki.ros.org/indigo/Installation/Ubuntu)
+- [OpenCV 2](https://docs.opencv.org/3.4.1/d2/de6/tutorial_py_setup_in_ubuntu.html) (Optional)
 
 ## Installation
 
