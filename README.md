@@ -54,27 +54,30 @@ $ catkin_make --pkg action_controller
 
 #### ROS Setup
 
-Start roscore on your **client** side:
+Start roscore:
 ```bash
 $ roscore
 ```
 
-Edit the `start_ingress.sh` script with your server network settings:
+#### Network Setup (optional)
+
+For using server-client setup, edit the `start_ingress.sh` script with your server network settings:
 ```bash
 ...
-# Setup ROS
 MASTER_URI=http://<roscore_ip_addr>:11311
 IP=<server_ip_addr>
 ...
 ```
-If you are using a single PC, you can use use the default `localhost` setup.  
 
-Run the script on the **server** side:
+#### Launch
+
+Run the script: 
 ```bash
 $ sh start_ingress.sh
 ```
+The first time you run this command, Docker downloads an 8.99GB image (could take a while!)  
 
-Start INGRESS server by running the `ingress` command:
+Start the INGRESS server inside the container by running the `ingress` command:
 ```bash
 root@pc:/# ingress
 ```
