@@ -85,6 +85,14 @@ Start the INGRESS server by running the `ingress` command:
 root@pc:/# ingress
 ```
 
+### Enable Disambiguation
+
+By default, the relational disambiguation is disabled for fast grounding. It can enabled by setting `DISAMBIGUATE=true` in `~/ingress_server.sh`:
+
+```bash
+root@pc:/# sed -i 's/DISAMBIGUATE=false/DISAMBIGUATE=true/g' ~/ingress_server.sh
+root@pc:/# ingress
+```
 
 ## Example
 
