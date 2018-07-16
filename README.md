@@ -85,12 +85,14 @@ Start the INGRESS server by running the `ingress` command:
 root@pc:/# ingress
 ```
 
-### Enable Disambiguation
+Wait until you see `METEOR initialized`. That means, the grounding server is ready.
 
-By default, the relational disambiguation is disabled for fast grounding. It can enabled by setting `DISAMBIGUATE=true` in `~/ingress_server.sh`:
+### Disambiguation
+
+By default, the disambiguation is enabled. It can disabled by setting `DISAMBIGUATE=false` in `~/ingress_server.sh` for fast-grounding without disambiguation:
 
 ```bash
-root@pc:/# sed -i 's/DISAMBIGUATE=false/DISAMBIGUATE=true/g' ~/ingress_server.sh
+root@pc:/# sed -i 's/DISAMBIGUATE=true/DISAMBIGUATE=false/g' ~/ingress_server.sh
 root@pc:/# ingress
 ```
 
