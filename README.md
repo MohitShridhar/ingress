@@ -37,7 +37,7 @@ If you find the code useful, please cite:
 
 Follow the instructions to install NVIDIA docker. You should be able to run this, if everything is installed properly:
 ```bash
-docker run --runtime=nvidia --rm nvidia/cuda nvidia-smi
+$ docker run --runtime=nvidia --rm nvidia/cuda nvidia-smi
 ```
 
 #### Interface
