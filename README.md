@@ -87,6 +87,9 @@ root@pc:/# ingress
 
 Wait until you see `METEOR initialized`. That means, the grounding server is ready.
 
+### Exit
+
+To shutdown the `ingress` server, use `Ctrl + c` or `Ctrl + \`.
 
 ## Options
 
