@@ -87,6 +87,9 @@ root@pc:/# ingress
 
 Wait until you see `METEOR initialized`. That means, the grounding server is ready.
 
+
+## Options
+
 ### Disambiguation
 
 By default, the disambiguation is enabled. It can disabled by setting `DISAMBIGUATE=false` in `~/ingress_server.sh` for fast-grounding without disambiguation:
