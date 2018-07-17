@@ -104,7 +104,7 @@ root@pc:/# ingress
 
 ## Example
 
-Try out the example:
+After starting the `ingress` server, try out the example:
 
 ```bash
 $ cd <ros_workspace>/examples
