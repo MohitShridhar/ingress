@@ -130,6 +130,11 @@ $ python interactive_grounding_example.py
 Type "the red cup in the middle" into the query. This outputs `grounding_result.png` and prints out self-referrential and relational captions.
 
 
+## Tips
+
+- Use [tmux](http://manpages.ubuntu.com/manpages/xenial/man1/tmux.1.html) to multiplex `roscore`, `ingress` and `python interactive_grounding_example.py`
+- Make sure the input image is well-lit, and the scene is uncluttered
+
 ## Development
 
 Good luck...
