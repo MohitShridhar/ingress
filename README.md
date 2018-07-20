@@ -6,7 +6,7 @@ RSS 2018
 
 ![](data/main_fig_paper.jpg)
 
-Since my code is an **abomination**, I created a docker image (~8.99GB) of my setup. You can treat this is as a black box; input: image & expression, output: bounding boxes and question captions  
+Since my code is an **abomination**, I created a docker image (~9.02GB) of my setup. You can treat this is as a black box; input: image & expression, output: bounding boxes and question captions  
 
 If you find the code useful, please cite:
 
@@ -31,6 +31,11 @@ If you find the code useful, please cite:
 #### Hardware
 - Tested on NVIDIA GTX 1080 (needs about 2.5 GB RAM)
 	
+## Overview
+
+The docker image contains: ROS (Indigo), Torch, Caffe, and Ingress (source code). To run and test Ingress inside the docker image, you don't need to install any dependencies other than docker itself. However, for a server-client setup, you need to compile the interface on your client side (see below).   
+
+
 ## Installation
 
 #### Docker (server)
@@ -98,13 +103,24 @@ To shutdown the `ingress` server, use `Ctrl + c` or `Ctrl + \`.
 By default, the disambiguation is enabled. It can disabled by setting `DISAMBIGUATE=false` in `~/ingress_server.sh` for fast-grounding without disambiguation:
 
 ```bash
-root@pc:/# sed -i 's/DISAMBIGUATE=true/DISAMBIGUATE=false/g' ~/ingress_server.sh
-root@pc:/# ingress
+root@pc:/ sed -i 's/DISAMBIGUATE=true/DISAMBIGUATE=false/g' ~/ingress_server.sh
+root@pc:/ ingress
 ```
 
 ## Example
 
 After starting the `ingress` server, try out the example:
+
+#### From docker image
+
+```bash
+root@pc:/ cd ~/ros_devel_ws/src/ingress/examples/
+root@pc:/ python interactive_grounding_example.py
+```
+
+OR
+
+#### From client PC
 
 ```bash
 $ cd <ros_workspace>/examples
