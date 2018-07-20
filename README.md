@@ -33,7 +33,7 @@ If you find the code useful, please cite:
 	
 ## Overview
 
-The docker image contains: ROS (Indigo), Torch, Caffe, and Ingress (source code). To run and test Ingress inside the docker image, you don't need to install any dependencies other than docker itself. However, for a server-client setup, you need to compile the interface on your client side (see below).   
+The docker image contains: ROS (Indigo), Torch, Caffe, and Ingress (source code). To run and test Ingress inside the docker image, you don't need to install any dependencies other than docker itself. However, for a server-client setup, you need to clone this repo on both server & client, and compile the interface on the client side (see below).   
 
 
 ## Installation
