@@ -103,8 +103,8 @@ To shutdown the `ingress` server, use `Ctrl + c` or `Ctrl + \`.
 By default, the disambiguation is enabled. It can disabled by setting `DISAMBIGUATE=false` in `~/ingress_server.sh` for fast-grounding without disambiguation:
 
 ```bash
-root@pc:/ sed -i 's/DISAMBIGUATE=true/DISAMBIGUATE=false/g' ~/ingress_server.sh
-root@pc:/ ingress
+root@pc:/# sed -i 's/DISAMBIGUATE=true/DISAMBIGUATE=false/g' ~/ingress_server.sh
+root@pc:/# ingress
 ```
 
 ## Example
@@ -114,8 +114,8 @@ After starting the `ingress` server, try out the example:
 #### From docker image
 
 ```bash
-root@pc:/ cd ~/ros_devel_ws/src/ingress/examples/
-root@pc:/ python interactive_grounding_example.py
+root@pc:/# cd ~/ros_devel_ws/src/ingress/examples/
+root@pc:/# python interactive_grounding_example.py
 ```
 
 OR
