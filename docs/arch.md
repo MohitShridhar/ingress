@@ -2,6 +2,9 @@
 
 ## Overview
 
+![](../data/soft_arch.png)
+
+
 ## Acknowledgements
 
 [Johnson et. al, Densecap](https://github.com/jcjohnson/densecap)  
