@@ -126,8 +126,17 @@ $ cd <ros_workspace>/examples
 $ python interactive_grounding_example.py
 ```
 
-Type "the red cup in the middle" into the query. This outputs `grounding_result.png` and prints out self-referrential and relational captions.
+Type "the red cup in the middle" into the query. This outputs `grounding_result.png` and prints out self-referrential and relational captions:
 
+![](data/grounding_result.png)
+
+```
+[INFO] [WallTime: 1532576914.160205] Self Referential Captions:
+['a red cup on the table', 'red cup on the table', 'red cup on the table']
+
+[INFO] [WallTime: 1532576914.160599] Relational Captions:
+['the red cup in the middle.', 'the red cup in the middle left.', 'the red cup in the middle.']
+```
 
 ## Tips
 
