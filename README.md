@@ -80,6 +80,7 @@ IP=<system_ip_addr>
 
 Run the script. The first time you run this command, Docker downloads an 9.2GB image (could take a while!)  
 ```bash
+$ cd <ingress_dir>
 $ sh start_ingress.sh
 ```
 
