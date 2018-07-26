@@ -32,7 +32,7 @@ def ground():
     rospy.loginfo("2. Waiting for dense_refexp_query action server ...")
     query_client.wait_for_server()    
     
-    rospy.loginfo("Ground servers found!")
+    rospy.loginfo("Ingress server found! Ready.")
 
 
     # load image, extract and store feature vectors for objects
