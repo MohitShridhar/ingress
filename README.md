@@ -89,7 +89,7 @@ Start the INGRESS server by running the `ingress` command:
 root@pc:/# ingress
 ```
 
-Wait until you see `METEOR initialized`. That means, the grounding server is ready. Now you can send images and expressions to the server, and receive bounding boxes and question captions as output.
+Wait until you see `METEOR initialized`. That means the grounding server is ready. Now you can send images and expressions to the server, and receive grounded bounding boxes and question captions as output.
 
 #### Exit
 
