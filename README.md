@@ -6,7 +6,7 @@ RSS 2018
 
 ![](data/main_fig_paper.jpg)
 
-Since my code is an **abomination**, I created a docker image (~9.02GB) of my setup. You can treat this is as a black box; input: image & expression, output: bounding boxes and question captions  
+Since my code is an **abomination**, I created a docker image (~9.2GB) of my setup. You can treat this is as a black box; input: image & expression, output: bounding boxes and question captions  
 
 If you find the code useful, please cite:
 
@@ -78,7 +78,7 @@ IP=<system_ip_addr>
 
 #### Launch
 
-Run the script. The first time you run this command, Docker downloads an 8.99GB image (could take a while!)  
+Run the script. The first time you run this command, Docker downloads an 9.2GB image (could take a while!)  
 ```bash
 $ sh start_ingress.sh
 ```
