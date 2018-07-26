@@ -6,7 +6,7 @@ RSS 2018
 
 ![](data/main_fig_paper.jpg)
 
-Since my code is an **abomination**, I created a docker image (~9.2GB) of my setup. You can treat this is as a black box; input: image & expression, output: bounding boxes and question captions  
+Since my code is an **abomination**, I created a docker image (~9.2GB) of my setup. You can treat this is as a black box; input: image & expression, output: bounding boxes and question captions. See [Architecture](docs/arch.md) for more details.  
 
 If you find the code useful, please cite:
 
