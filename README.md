@@ -38,7 +38,7 @@ The docker image contains: ROS (Indigo), Torch, Caffe, and Ingress (source code)
 
 #### Docker (server)
 
-Follow the instructions to install NVIDIA docker. You should be able to run this, if everything is installed properly:
+Follow the instructions to [install NVIDIA docker](https://github.com/nvidia/nvidia-docker/wiki/Installation-(version-2.0). You should be able to run this, if everything is installed properly:
 ```bash
 $ docker run --runtime=nvidia --rm nvidia/cuda nvidia-smi
 ```
