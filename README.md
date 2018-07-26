@@ -24,7 +24,7 @@ If you find the code useful, please cite:
 #### Software
 - [Ubuntu 14.04](http://releases.ubuntu.com/14.04/)
 - [Docker 18.03.1+](https://docs.docker.com/install/linux/docker-ce/ubuntu/#install-docker-ce)
-- [NVIDIA Docker](https://github.com/nvidia/nvidia-docker/wiki/Installation-(version-2.0))
+- [NVIDIA Docker](https://github.com/NVIDIA/nvidia-docker)
 - [ROS Indigo](http://wiki.ros.org/indigo/Installation/Ubuntu)
 - [OpenCV 2](https://docs.opencv.org/3.4.1/d2/de6/tutorial_py_setup_in_ubuntu.html) (Optional)
 
@@ -38,7 +38,7 @@ The docker image contains: ROS (Indigo), Torch, Caffe, and Ingress (source code)
 
 #### Docker (server)
 
-Follow the instructions to [install NVIDIA docker](https://github.com/nvidia/nvidia-docker/wiki/Installation-(version-2.0). You should be able to run this, if everything is installed properly:
+Follow the instructions to [install NVIDIA docker](https://github.com/NVIDIA/nvidia-docker). You should be able to run this, if everything is installed properly:
 ```bash
 $ docker run --runtime=nvidia --rm nvidia/cuda nvidia-smi
 ```
