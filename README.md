@@ -84,8 +84,9 @@ $ cd <ingress_dir>
 $ sh start_ingress.sh
 ```
 
-Start the INGRESS server by running the `ingress` command:
+Start the INGRESS server in a tmux shell by running the `ingress` command:
 ```bash
+root@pc:/# tmux new -s ingress
 root@pc:/# ingress
 ```
 
@@ -102,6 +103,7 @@ After starting the `ingress` server, try out the example:
 #### From docker image
 
 ```bash
+root@pc:/# tmux new -s test
 root@pc:/# cd ~/ros_devel_ws/src/ingress/examples/
 root@pc:/# python interactive_grounding_example.py
 ```
