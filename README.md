@@ -95,17 +95,6 @@ Wait until you see `METEOR initialized`. That means the grounding server is read
 
 To shutdown the `ingress` server, use `Ctrl + c` or `Ctrl + \`.
 
-## Options
-
-#### Disambiguation
-
-By default, the disambiguation is enabled. It can disabled by setting `DISAMBIGUATE=false` in `~/ingress_server.sh` for fast-grounding without disambiguation:
-
-```bash
-root@pc:/# sed -i 's/DISAMBIGUATE=true/DISAMBIGUATE=false/g' ~/ingress_server.sh
-root@pc:/# ingress
-```
-
 ## Example
 
 After starting the `ingress` server, try out the example:
@@ -122,7 +111,7 @@ OR
 #### From client PC
 
 ```bash
-$ cd <ros_workspace>/examples
+$ cd <ros_workspace>/src/ingress/examples
 $ python interactive_grounding_example.py
 ```
 
@@ -136,6 +125,17 @@ Type "the red cup in the middle" into the query. This outputs `grounding_result.
 
 [INFO] [WallTime: 1532576914.160599] Relational Captions:
 ['the red cup in the middle.', 'the red cup in the middle left.', 'the red cup in the middle.']
+```
+
+## Options
+
+#### Disambiguation
+
+By default, the disambiguation is enabled. It can disabled by setting `DISAMBIGUATE=false` in `~/ingress_server.sh` for fast-grounding without disambiguation:
+
+```bash
+root@pc:/# sed -i 's/DISAMBIGUATE=true/DISAMBIGUATE=false/g' ~/ingress_server.sh
+root@pc:/# ingress
 ```
 
 ## Tips
