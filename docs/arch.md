@@ -1,6 +1,8 @@
 # Architecture
 
-## Overview
+A brief overview of the architecture of Ingress. 
+
+## System Overview
 
 ![](../data/soft_arch.png)
 
