@@ -65,7 +65,6 @@ Start roscore:
 ```bash
 $ roscore
 ```
-Press `Ctrl+b` and then `d` to exit the tmux shell.
 
 #### Network Setup (Optional)
 
