@@ -6,7 +6,7 @@ RSS 2018
 
 ![](data/main_fig_paper.jpg)
 
-Since my code is an **abomination**, I created a docker image (~9.2GB) of my setup. You can treat this is as a black box; input: image & expression, output: bounding boxes and question captions. See [Architecture](docs/arch.md) for more details.  
+This is a docker image (~9.2GB) of my setup for grounding referring expressions. You can treat this is as a black box; input: image & expression, output: bounding boxes and question captions. See [Architecture](docs/arch.md) for more details.  
 
 If you find the code useful, please cite:
 
@@ -143,11 +143,8 @@ root@pc:/# ingress
 ## Tips
 
 - Use [tmux](http://manpages.ubuntu.com/manpages/xenial/man1/tmux.1.html) to multiplex `roscore`, `ingress` and `python interactive_grounding_example.py`
+- `roscore` should be up and running before you start the `ingress` server
 - Make sure the input image is well-lit, and the scene is uncluttered
-
-## Development
-
-Good luck...
 
 
 
