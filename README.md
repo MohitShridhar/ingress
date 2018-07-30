@@ -61,9 +61,8 @@ $ catkin_make --pkg action_controller
 
 #### ROS Setup
 
-Start roscore in a tmux shell:
+Start roscore:
 ```bash
-$ tmux new -s roscore
 $ roscore
 ```
 Press `Ctrl+b` and then `d` to exit the tmux shell.
