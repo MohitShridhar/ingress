@@ -61,10 +61,12 @@ $ catkin_make --pkg action_controller
 
 #### ROS Setup
 
-Start roscore:
+Start roscore in a tmux shell:
 ```bash
+$ tmux new -s roscore
 $ roscore
 ```
+Press `Ctrl+b` and then `d` to exit the tmux shell.
 
 #### Network Setup (Optional)
 
@@ -142,9 +144,8 @@ root@pc:/# ingress
 
 ## Tips
 
-- Use [tmux](http://manpages.ubuntu.com/manpages/xenial/man1/tmux.1.html) to multiplex `roscore`, `ingress` and `python interactive_grounding_example.py`
 - `roscore` should be up and running before you start the `ingress` server
 - Make sure the input image is well-lit, and the scene is uncluttered
-
+- Use [tmux](http://manpages.ubuntu.com/manpages/xenial/man1/tmux.1.html) to multiplex `roscore`, `ingress` and `python interactive_grounding_example.py`
 
 
