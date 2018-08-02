@@ -146,4 +146,14 @@ root@pc:/# ingress
 - Make sure the input image is well-lit, and the scene is uncluttered
 - Use [tmux](http://manpages.ubuntu.com/manpages/xenial/man1/tmux.1.html) to multiplex `roscore`, `ingress` and `python interactive_grounding_example.py`
 
+## Issues
+
+If Lua complains that certain CUDA functions were not found during execution. Reinstall the rocks and commit the changes to the docker image:
+
+```bash
+$ luarocks install cutorch
+$ luarocks install cunn
+$ luarocks install cudnn
+```
+
 
