@@ -153,7 +153,7 @@ $ sh start_ingress.sh
 root@pc:/# ingress
 ```
 
-You should now be able to run the Quickstart example outside the docker image on all clients connected to the roscore.
+You should now be able to run the Quickstart example outside the docker image on all clients connected to roscore.
 
 ## Options
 
