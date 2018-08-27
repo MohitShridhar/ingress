@@ -52,7 +52,7 @@ A quick guide to testing the whole system inside the docker image.
 
 #### Script
 
-**Clone** the repo OR **unzip** the folder:
+Clone the repo OR unzip the folder:
 ```bash
 $ git clone --recursive https://github.com/AdaCompNUS/ingress.git 
 ```
