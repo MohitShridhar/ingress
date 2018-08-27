@@ -118,11 +118,11 @@ To shutdown the `ingress` server, use `Ctrl + c` or `Ctrl + \`.
 
 ## Server-Client Setup
 
-To integrate Ingress with real-robots, you can use the docker image as a grounding server. But first, you need to compile the ROS actionlib interface on your robot or client-pc in order to communicate with the Ingress server (that is running inside the docker image).
+To integrate Ingress with real-robots, use the docker image as a grounding server. But first, you need to compile the ROS actionlib interface on your robot or client-pc in order to communicate with the Ingress server (that is running inside the docker image).
 
 #### Compile Interface 
 
-Clone the repo:
+On your robot/client-pc clone the repo:
 ```bash
 $ cd <your_ros_workspace>/src
 $ git clone https://github.com/MohitShridhar/action_controller.git
@@ -153,7 +153,7 @@ $ sh start_ingress.sh
 root@pc:/# ingress
 ```
 
-You should now be able to run the Quickstart example outside the docker image.
+You should now be able to run the Quickstart example outside the docker image on all clients connected to the roscore.
 
 ## Options
 
