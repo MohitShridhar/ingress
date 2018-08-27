@@ -122,7 +122,7 @@ To integrate Ingress with real-robots, use the docker image as a grounding serve
 
 #### Compile Interface 
 
-On your robot/client-pc clone the repo:
+On your robot/client-pc, clone the interface repo:
 ```bash
 $ cd <your_ros_workspace>/src
 $ git clone https://github.com/MohitShridhar/action_controller.git
