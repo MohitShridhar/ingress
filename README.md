@@ -176,7 +176,7 @@ root@pc:/# ingress
 ## Caveats
 
 - This demo code doesn't contain the interactive question asking interface.
-- For grounding perspectives (e.g: 'my left', 'your right') see [Perspective Correction guide](docs/persp.md).
+- For grounding perspectives (e.g: 'my left', 'your right') see [perspective correction guide](docs/persp.md).
 
 ## Issues
 
