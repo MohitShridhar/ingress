@@ -170,7 +170,7 @@ root@pc:/# ingress
 
 - `roscore` should be up and running before you start the `ingress` server
 - Make sure the input image is well-lit, and the scene is uncluttered
-- Crop the image to exclude irrelevant parts of the scene (e.g: backdrop of the table) to reduce occasional mis-detections
+- Crop the image to exclude irrelevant parts of the scene (e.g: backdrop of the table) to reduce mis-detections
 - Use [tmux](http://manpages.ubuntu.com/manpages/xenial/man1/tmux.1.html) to multiplex `roscore`, `ingress` and `python interactive_grounding_example.py`
 
 ## Caveats
