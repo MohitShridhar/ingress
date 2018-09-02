@@ -50,7 +50,7 @@ $ docker run --runtime=nvidia --rm nvidia/cuda nvidia-smi
 
 A quick guide to testing the whole system inside the docker image.  
 
-### Clone
+### Start Docker
 
 Clone the repo OR unzip the folder:
 ```bash
