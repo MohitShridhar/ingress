@@ -67,7 +67,7 @@ def ground():
         query_client.wait_for_result()
         query_result = query_client.get_result()
 
-        # grounding results: indexes of mostly bounding boxes
+        # grounding results: indexes of mostly likely bounding boxes
         top_idx = query_result.top_box_idx
         context_boxes_idxs = list(query_result.context_boxes_idxs)
         context_boxes_idxs.append(top_idx)
