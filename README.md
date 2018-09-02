@@ -54,7 +54,7 @@ A quick guide to testing the whole system inside the docker image.
 
 Clone the repo OR unzip the folder:
 ```bash
-$ git clone --recursive https://github.com/AdaCompNUS/ingress.git 
+$ git clone --recursive https://github.com/MohitShridhar/ingress.git 
 ```
 
 Run the script. The first time you run this command, Docker downloads an 9.2GB image (could take a while!):
@@ -125,7 +125,7 @@ To integrate Ingress with real-robots, use the docker image as a grounding serve
 On your robot/client-pc, clone the interface repo:
 ```bash
 $ cd <your_ros_workspace>/src
-$ git clone https://github.com/MohitShridhar/action_controller.git
+$ git clone --recursive https://github.com/MohitShridhar/ingress.git
 ```
 
 Install actionlib messages:
