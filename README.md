@@ -170,20 +170,29 @@ root@pc:/# ingress
 
 - `roscore` should be up and running before you start the `ingress` server
 - Make sure the input image is well-lit, and the scene is uncluttered
+- Crop the image to exclude irrelevant parts of the scene (e.g: backdrop of the table) to reduce occasional mis-detections
 - Use [tmux](http://manpages.ubuntu.com/manpages/xenial/man1/tmux.1.html) to multiplex `roscore`, `ingress` and `python interactive_grounding_example.py`
 
 ## Caveats
 
-This demo code doesn't contain the interactive question asking interface.
+- This demo code doesn't contain the interactive question asking interface.
+- For grounding perspectives (e.g: 'my left', 'your right') see Perspective Correction guide.
 
 ## Issues
 
-If Lua complains that certain CUDA functions were not found during execution. Reinstall the rocks and commit the changes to the docker image:
+If Lua complains that certain CUDA functions were not found during execution: Remove the clean-up option `--rm` from the `docker` command in `start_ingress.sh`. Reinstall the rocks:
 
 ```bash
 $ luarocks install cutorch
 $ luarocks install cunn
 $ luarocks install cudnn
 ```
+
+Exit `docker commit` the changes to the image.
+
+## Acknowledgements
+
+[Johnson et. al, Densecap](https://github.com/jcjohnson/densecap)  
+[Nagaraja et. al, Referring Expressions](https://github.com/varun-nagaraja/referring-expressions)
 
 
