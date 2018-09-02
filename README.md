@@ -54,7 +54,7 @@ A quick guide to testing the whole system inside the docker image.
 
 Clone the repo OR unzip the folder:
 ```bash
-$ git clone --recursive https://github.com/MohitShridhar/ingress.git 
+$ git clone https://github.com/MohitShridhar/ingress.git 
 ```
 
 Run the script. The first time you run this command, Docker downloads an 9.2GB image (could take a while!):
@@ -188,7 +188,7 @@ $ luarocks install cunn
 $ luarocks install cudnn
 ```
 
-Exit `docker commit` the changes to the image.
+Exit and `docker commit` the changes to the image.
 
 ## Acknowledgements
 
