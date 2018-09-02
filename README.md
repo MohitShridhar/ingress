@@ -6,7 +6,7 @@ RSS 2018
 
 ![](data/main_fig_paper.jpg)
 
-This is a docker image (~9.2GB) of my setup for grounding referring expressions. You can treat this is as a black box; input: image & expression, output: bounding boxes and question captions. See [Architecture](docs/arch.md) for more details.  
+This is a docker image (~9.2GB) of my **demo setup** for grounding referring expressions. You can treat this is as a black box; input: image & expression, output: bounding boxes and question captions. See [Architecture](docs/arch.md) for more details.   
 
 If you find the code useful, please cite:
 
@@ -38,7 +38,7 @@ The docker image contains: [ROS (Indigo)](http://wiki.ros.org/indigo), [Torch](h
 
 <!--However, for a server-client setup, you need to clone this repo on both the server & client, and compile the interface on the client side (see below). The client can also be the shell running the docker image.-->   
 
-#### Nvidia Docker 
+### Nvidia Docker 
 
 Follow the instructions to [install NVIDIA docker](https://github.com/NVIDIA/nvidia-docker). You should be able to run this, if everything is installed properly:
 ```bash
@@ -50,7 +50,7 @@ $ docker run --runtime=nvidia --rm nvidia/cuda nvidia-smi
 
 A quick guide to testing the whole system inside the docker image.  
 
-#### Script
+### Script
 
 Clone the repo OR unzip the folder:
 ```bash
@@ -63,7 +63,7 @@ $ cd <ingress_dir>
 $ sh start_ingress.sh
 ```
 
-#### Roscore
+### Roscore
 
 Start roscore in a tmux shell:
 ```bash
@@ -73,7 +73,7 @@ root@pc:/# roscore
 
 Press `Ctrl+b` and `d` to escape the tmux shell.  
 
-#### Ingress
+### Ingress
 
 Start the INGRESS server in a tmux shell by running the `ingress` command:
 ```bash
@@ -83,7 +83,7 @@ root@pc:/# ingress
 
 Wait until you see `METEOR initialized`. That means the grounding server is ready. Now you can send images and expressions to the server, and receive grounded bounding boxes and question captions as output.  
 
-#### Test
+### Test
 
 Run the example in another tmux shell:
 
@@ -111,7 +111,7 @@ To open `grounding_result.png`, on a separate shell:
 $ docker cp <container_id>:/root/ros_devel_ws/src/ingress/examples/grounding_result.png ./
 ```
 
-#### Exit
+### Exit
 
 To shutdown the `ingress` server, use `Ctrl + c` or `Ctrl + \`.
 
@@ -120,7 +120,7 @@ To shutdown the `ingress` server, use `Ctrl + c` or `Ctrl + \`.
 
 To integrate Ingress with real-robots, use the docker image as a grounding server. But first, you need to compile the ROS actionlib interface on your robot or client-pc in order to communicate with the Ingress server (that is running inside the docker image).
 
-#### Compile Interface 
+### Compile Interface 
 
 On your robot/client-pc, clone the interface repo:
 ```bash
@@ -134,7 +134,7 @@ $ cd <your_ros_workspace>
 $ catkin_make --pkg action_controller
 ```
 
-#### Network Setup
+### Network Setup
 
 Edit the `start_ingress.sh` script with your network settings:
 ```bash
@@ -144,7 +144,7 @@ IP=<ingress_system_ip_addr>
 ...
 ```
 
-#### Usage
+### Usage
 
 Start `roscore` on your robot or client-pc. Then start `ingress` inside the docker image:
 
@@ -157,7 +157,7 @@ You should now be able to run the Quickstart example outside the docker image on
 
 ## Options
 
-#### Disambiguation
+### Disambiguation
 
 By default, the disambiguation is enabled. It can disabled by setting `DISAMBIGUATE=false` in `~/ingress_server.sh` for fast-grounding without disambiguation:
 
