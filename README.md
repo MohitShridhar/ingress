@@ -180,7 +180,7 @@ root@pc:/# ingress
 
 ## Issues
 
-If Lua complains that certain CUDA functions were not found during execution: Remove the clean-up option `--rm` from the `docker` command in `start_ingress.sh`. Reinstall the rocks:
+If Lua complains that certain CUDA functions were not found during execution: Remove the clean-up option `--rm` from the `docker` command in `start_ingress.sh`. Start docker and reinstall the rocks:
 
 ```bash
 $ luarocks install cutorch
