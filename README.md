@@ -116,7 +116,7 @@ $ docker cp <container_id>:/root/ros_devel_ws/src/ingress/examples/grounding_res
 To shutdown the `ingress` server, use `Ctrl + c` or `Ctrl + \`.
 
 
-## Server-Client Setup
+## Robot Setup
 
 To integrate Ingress with real-robots, use the docker image as a grounding server. But first, you need to compile the ROS actionlib interface on your robot or client-pc in order to communicate with the Ingress server (that is running inside the docker image).
 
@@ -134,7 +134,7 @@ $ cd <your_ros_workspace>
 $ catkin_make --pkg action_controller
 ```
 
-### Network Setup
+### Network 
 
 Edit the `start_ingress.sh` script with your network settings:
 ```bash
@@ -176,7 +176,7 @@ root@pc:/# ingress
 ## Caveats
 
 - This demo code doesn't contain the interactive question asking interface.
-- For grounding perspectives (e.g: 'my left', 'your right') see Perspective Correction guide.
+- For grounding perspectives (e.g: 'my left', 'your right') see [Perspective Correction guide](docs/persp.md).
 
 ## Issues
 
