@@ -19,6 +19,8 @@ If you find the code useful, please cite:
 } 
 ```
 
+And works in the [acknowledgements](#acknowledgements).
+
 ## Requirements
 
 ### Software
