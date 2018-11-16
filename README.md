@@ -195,6 +195,23 @@ Exit and `docker commit` the changes to the image.
 ## Acknowledgements
 
 [Johnson et. al, Densecap](https://github.com/jcjohnson/densecap)  
+```
+@inproceedings{densecap,
+  title={DenseCap: Fully Convolutional Localization Networks for Dense Captioning},
+  author={Johnson, Justin and Karpathy, Andrej and Fei-Fei, Li},
+  booktitle={Proceedings of the IEEE Conference on Computer Vision and 
+             Pattern Recognition},
+  year={2016}
+}
+```
+  
 [Nagaraja et. al, Referring Expressions](https://github.com/varun-nagaraja/referring-expressions)
-
+```
+@inproceedings{nagaraja16refexp,
+  title={Modeling Context Between Objects for Referring Expression Understanding},
+  author={Varun K. Nagaraja and Vlad I. Morariu and Larry S. Davis},
+  booktitle={ECCV},
+  year={2016}
+}
+```
 
